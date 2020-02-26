@@ -103,6 +103,12 @@ PharoDawnTheme >> selectionTextColor [
 		range: 255
 ]
 
+{ #category : #defaults }
+PharoDawnTheme >> shStyleTableName [
+
+	^ #dawnStyleTable
+]
+
 { #category : #'accessing colors' }
 PharoDawnTheme >> textColor [
 	^ Color fromHexString: 'FCF3D7'
