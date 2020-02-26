@@ -81,7 +81,7 @@ PharoDawnTheme >> backgroundColor [
 { #category : #'accessing colors' }
 PharoDawnTheme >> balloonBackgroundColor [
 
-	^ self darkBaseColor lighter
+	^ self class darkBaseColor lighter
 ]
 
 { #category : #'accessing colors' }
@@ -270,7 +270,8 @@ PharoDawnTheme >> errorPopperBackgroundColor [
 PharoDawnTheme >> initialize [
 
 	super initialize.
-	self windowActiveDropShadowStyle: #diffuse.
+	(self respondsTo: #windowActiveDropShadowStyle:) ifTrue:[
+		self windowActiveDropShadowStyle: #diffuse].
 	self settings preferGradientFill: false.
 ]
 
