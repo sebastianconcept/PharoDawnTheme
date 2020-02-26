@@ -7,5 +7,13 @@ Class {
 { #category : #baseline }
 BaselineOfPharoDawnTheme >> baseline: spec [
 	<baseline>
-	spec for: #common do: [ spec package: 'BaselineOfPharoDawnTheme' ]
+	spec
+		for: #common
+		do: [ spec postLoadDoIt: #onLoaded.
+			spec package: 'PharoDawnTheme' ]
+]
+
+{ #category : #baseline }
+BaselineOfPharoDawnTheme >> onLoaded [
+	(Smalltalk at: #PharoDawnTheme) installFullTheme
 ]
