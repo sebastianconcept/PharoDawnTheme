@@ -80,8 +80,8 @@ PharoDawnTheme >> backgroundColor [
 
 { #category : #'accessing colors' }
 PharoDawnTheme >> balloonBackgroundColor [
+	^ self backgroundColor
 
-	^ self class darkBaseColor lighter
 ]
 
 { #category : #'accessing colors' }
