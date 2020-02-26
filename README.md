@@ -4,7 +4,7 @@ A dark theme for Pharo
 
 ### Install
 ```
-Monticello new 
+Metacello new 
 	baseline: 'PharoDawnTheme';
 	repository: 'github://sebastianconcept/PharoDawnTheme';
 	load.
