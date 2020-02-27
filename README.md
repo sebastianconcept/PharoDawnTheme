@@ -1,5 +1,5 @@
 # PharoDawnTheme
-A dark theme for Pharo
+A warm dark theme for Pharo
 
 
 ### Install
