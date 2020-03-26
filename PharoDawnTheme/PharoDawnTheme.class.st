@@ -89,6 +89,11 @@ PharoDawnTheme >> borderColor [
 	^ Color darkGray darker darker darker
 ]
 
+{ #category : #'as yet unclassified' }
+PharoDawnTheme >> brickThemer [
+	^ GLMBrickDawnThemer new
+]
+
 { #category : #'accessing colors' }
 PharoDawnTheme >> buttonColor [
 	^ self backgroundColor lighter lighter
