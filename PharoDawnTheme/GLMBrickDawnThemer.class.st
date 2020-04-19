@@ -48,6 +48,14 @@ GLMBrickDawnThemer >> scrollbarColor [
 ]
 
 { #category : #'as yet unclassified' }
+GLMBrickDawnThemer >> spotterThemer [
+
+	^ self
+		registerModule: GTSpotterWidgetDawnThemer new
+		to: GTSpotterBrickDawnThemer new
+]
+
+{ #category : #'as yet unclassified' }
 GLMBrickDawnThemer >> tabLabelThemer [
 
 	^ self
