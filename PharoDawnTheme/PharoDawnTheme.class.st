@@ -89,6 +89,11 @@ PharoDawnTheme >> borderColor [
 	^ Color darkGray darker darker darker
 ]
 
+{ #category : #'fill-styles-buttons' }
+PharoDawnTheme >> brickThemer [
+	^ GLMBrickDawnThemer new
+]
+
 { #category : #'accessing colors' }
 PharoDawnTheme >> buttonColor [
 	^ self backgroundColor lighter lighter
