@@ -7,6 +7,11 @@ UITheme >> baseColorFor: aWidget [
 ]
 
 { #category : #'*PharoDawnTheme' }
+UITheme >> basePassiveBackgroundColorFor: aButton [
+	^ self class basePassiveBackgroundColor
+]
+
+{ #category : #'*PharoDawnTheme' }
 UITheme >> baseSelectionColorFor: aButton [
 	^ self class baseSelectionColor
 ]
@@ -47,6 +52,11 @@ UITheme >> normalFillStyleFor: aMorph height: anInteger [
 	"Return the normal button fillStyle for the given button."
 
 	^ SolidFillStyle color: (self lightColorFor: aMorph)
+]
+
+{ #category : #'*PharoDawnTheme' }
+UITheme >> progressBarFillStyleFor: aProgressBar [
+	^ self basePassiveBackgroundColorFor: aProgressBar
 ]
 
 { #category : #'*PharoDawnTheme' }
