@@ -36,6 +36,11 @@ UITheme >> lightColorFor: aButton [
 ]
 
 { #category : #'*PharoDawnTheme' }
+UITheme >> lightSelectionColorFor: aMorph [
+	^ self class lightSelectionColor
+]
+
+{ #category : #'*PharoDawnTheme' }
 UITheme >> newFocusIndicatorMorphFor: aMorph [
 	"Answer a new focus indicator for the given morph."
 
@@ -57,6 +62,11 @@ UITheme >> normalFillStyleFor: aMorph height: anInteger [
 { #category : #'*PharoDawnTheme' }
 UITheme >> progressBarFillStyleFor: aProgressBar [
 	^ self basePassiveBackgroundColorFor: aProgressBar
+]
+
+{ #category : #'*PharoDawnTheme' }
+UITheme >> progressBarProgressFillStyleFor: aProgressBar [
+	^ (self lightSelectionColorFor: aProgressBar)
 ]
 
 { #category : #'*PharoDawnTheme' }
