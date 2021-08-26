@@ -1,6 +1,11 @@
 Extension { #name : #UITheme }
 
 { #category : #'*PharoDawnTheme' }
+UITheme >> baseSelectionColorFor: aButton [
+	^ self class baseSelectionColor
+]
+
+{ #category : #'*PharoDawnTheme' }
 UITheme >> darkBaseColorFor: aButton [
 	^ self class darkBaseColor
 ]
@@ -8,6 +13,18 @@ UITheme >> darkBaseColorFor: aButton [
 { #category : #'*PharoDawnTheme' }
 UITheme >> lightColorFor: aButton [
 	^ self class lightBaseColor
+]
+
+{ #category : #'*PharoDawnTheme' }
+UITheme >> newFocusIndicatorMorphFor: aMorph [
+	"Answer a new focus indicator for the given morph."
+
+	^ BorderedMorph new
+		fillStyle: Color transparent;
+		borderStyle: (SimpleBorder new
+			 width: 1;
+			baseColor: (self baseSelectionColorFor: aMorph));
+		bounds: aMorph focusBounds
 ]
 
 { #category : #'*PharoDawnTheme' }
