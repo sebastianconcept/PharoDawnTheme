@@ -1,6 +1,11 @@
 Extension { #name : #UITheme }
 
 { #category : #'*PharoDawnTheme' }
+UITheme >> darkBaseColorFor: aButton [
+	^ self class darkBaseColor
+]
+
+{ #category : #'*PharoDawnTheme' }
 UITheme >> lightColorFor: aButton [
 	^ self class lightBaseColor
 ]
@@ -23,4 +28,12 @@ UITheme >> subgroupColorFrom: paneColor [
 	"Answer the colour for a subgroup given the pane colour."
 
 	^ self lightColorFor: paneColor" self class baseColor"
+]
+
+{ #category : #'*PharoDawnTheme' }
+UITheme >> tabPanelBorderStyleFor: aTabGroup [
+	^ Pharo3TabPanelBorder new 
+		width: 1;
+		baseColor: ((self darkBaseColorFor: aTabGroup));
+		tabSelector: aTabGroup tabSelectorMorph
 ]
