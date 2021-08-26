@@ -1,6 +1,12 @@
 Extension { #name : #UITheme }
 
 { #category : #'*PharoDawnTheme' }
+UITheme >> baseColorFor: aWidget [
+
+	^ self class baseColor
+]
+
+{ #category : #'*PharoDawnTheme' }
 UITheme >> baseSelectionColorFor: aButton [
 	^ self class baseSelectionColor
 ]
@@ -8,6 +14,15 @@ UITheme >> baseSelectionColorFor: aButton [
 { #category : #'*PharoDawnTheme' }
 UITheme >> darkBaseColorFor: aButton [
 	^ self class darkBaseColor
+]
+
+{ #category : #'*PharoDawnTheme' }
+UITheme >> groupPanelBorderStyleFor: aGroupPanel [
+	"Answer the normal border style for a group panel."
+
+	^ SimpleBorder new
+		width: 1;
+		baseColor: ((self baseColorFor: aGroupPanel))
 ]
 
 { #category : #'*PharoDawnTheme' }
