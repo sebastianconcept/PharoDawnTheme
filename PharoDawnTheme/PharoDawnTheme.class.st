@@ -197,7 +197,7 @@ PharoDawnTheme >> dangerTextColor [
 { #category : #'fill-styles' }
 PharoDawnTheme >> desktopColor [
 
-	^ Color darkGray darker
+	^ Color fromHexString: '1E1F1C'
 ]
 
 { #category : #'basic-colors-diffs' }
