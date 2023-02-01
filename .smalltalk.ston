@@ -4,8 +4,10 @@ SmalltalkCISpec {
       #baseline : 'PharoDawnTheme',
       #directory : '',
       #load : ['default'],
-      #platforms : [ #pharo ],
-      #failOnZeroTests : false
+      #platforms : [ #pharo ]
     }
-  ]
+  ],
+  #testing : {
+    #failOnZeroTests : false
+  }
 }
