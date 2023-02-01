@@ -1,0 +1,10 @@
+SmalltalkCISpec {
+  #loading : [
+    SCIMetacelloLoadSpec {
+      #baseline : 'PharoDawnTheme',
+      #directory : 'src',
+      #load : ['default'],
+      #platforms : [ #pharo ]
+    }
+  ]
+}
