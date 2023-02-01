@@ -1,6 +1,7 @@
 # PharoDawnTheme
 A warm dark theme for Pharo.
 
+![build](https://github.com/sebastianconcept/PharoDawnTheme/actions/workflows/build.yml/badge.svg)
 [![Release](https://img.shields.io/github/v/tag/sebastianconcept/PharoDawnTheme?label=release)](https://github.com/sebastianconcept/PharoDawnTheme/releases)
 [![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE.txt)
 
