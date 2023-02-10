@@ -15,6 +15,7 @@ BaselineOfPharoDawnTheme >> baseline: spec [
 
 { #category : #baseline }
 BaselineOfPharoDawnTheme >> onLoaded [
+
 	Smalltalk
 		at: #UIThemeWatery
 		ifPresent: [ "Older Pharos didn't had their UITheme refactored like now."
@@ -23,5 +24,7 @@ BaselineOfPharoDawnTheme >> onLoaded [
 				instanceVariableNames: ''
 				classVariableNames: ''
 				package: 'PharoDawnTheme' ].
-	(Smalltalk at: #PharoDawnTheme) installFullTheme
+	(Smalltalk at: #PharoDawnTheme)
+		installFullTheme;
+		beCurrent
 ]
