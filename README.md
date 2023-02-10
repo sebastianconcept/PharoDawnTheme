@@ -1,3 +1,4 @@
+![PharoDawnTheme](https://blog.sebastiansastre.co/assets/PharoDawnTheme.png)
 # PharoDawnTheme
 A warm dark theme for Pharo.
 
