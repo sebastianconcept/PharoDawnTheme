@@ -1,6 +1,6 @@
 ![PharoDawnTheme](https://blog.sebastiansastre.co/assets/PharoDawnTheme.png)
 # PharoDawnTheme
-A warm dark theme for Pharo.
+A warm dark theme for Pharo. It makes Pharo look like that 👆
 
 ![build](https://github.com/sebastianconcept/PharoDawnTheme/actions/workflows/build.yml/badge.svg)
 [![Release](https://img.shields.io/github/v/tag/sebastianconcept/PharoDawnTheme?label=release)](https://github.com/sebastianconcept/PharoDawnTheme/releases)
