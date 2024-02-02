@@ -13,8 +13,6 @@ jobs:
     strategy:
       matrix:
         smalltalk: 
-          - Pharo64-9.0
-          - Pharo64-10
           - Pharo64-11
     name: ${{ matrix.smalltalk }}
     steps:
