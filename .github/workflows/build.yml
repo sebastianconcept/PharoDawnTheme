@@ -5,14 +5,7 @@ env:
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the development branch
-on:
-  pull_request:
-    types: [opened]
-
-  push:
-    branches:
-      - develop
-      - master
+on: [push]
 
 jobs:
   build:
@@ -22,6 +15,7 @@ jobs:
         smalltalk: 
           - Pharo64-9.0
           - Pharo64-10
+          - Pharo64-11
     name: ${{ matrix.smalltalk }}
     steps:
       - uses: actions/checkout@v2
