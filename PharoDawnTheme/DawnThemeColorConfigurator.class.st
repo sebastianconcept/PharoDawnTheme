@@ -7,7 +7,7 @@ Class {
 { #category : #colors }
 DawnThemeColorConfigurator >> backgroundColor [
 
-	^ Color r: 0.130 g: 0.130 b: 0.130
+	^ Color fromHexString: '262720'
 ]
 
 { #category : #colors }
@@ -25,7 +25,7 @@ DawnThemeColorConfigurator >> badgeTextColor [
 { #category : #colors }
 DawnThemeColorConfigurator >> balloonBackgroundColor [
 
-	^ self darkBaseColor lighter
+	^ self backgroundColor
 ]
 
 { #category : #colors }
@@ -42,8 +42,7 @@ DawnThemeColorConfigurator >> basePassiveBackgroundColor [
 
 { #category : #colors }
 DawnThemeColorConfigurator >> baseSelectionColor [
-
-	^ Color r: 97 g: 163 b: 225 range: 255
+	^ Color fromHexString: '49483E'
 ]
 
 { #category : #colors }
@@ -59,9 +58,16 @@ DawnThemeColorConfigurator >> buttonColor [
 ]
 
 { #category : #colors }
+DawnThemeColorConfigurator >> buttonSelectedFillStyleFor: aButton [
+	"Return the normal button fillStyle for the given button."
+
+	^ SolidFillStyle color: self selectionColor
+]
+
+{ #category : #colors }
 DawnThemeColorConfigurator >> caretColor [
 
-	^ Color lightBlue
+	^ self backgroundColor muchLighter
 ]
 
 { #category : #colors }

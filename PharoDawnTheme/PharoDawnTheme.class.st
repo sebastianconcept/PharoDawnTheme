@@ -1,3 +1,6 @@
+"
+A warm dark theme for Pharo.
+"
 Class {
 	#name : #PharoDawnTheme,
 	#superclass : #UITheme,
@@ -12,11 +15,6 @@ PharoDawnTheme class >> baseColor [
 { #category : #accessing }
 PharoDawnTheme class >> basePassiveBackgroundColor [
 	^ Color darkGray
-]
-
-{ #category : #accessing }
-PharoDawnTheme class >> baseSelectionColor [
-	^ Color fromHexString: '49483E'
 ]
 
 { #category : #configuration }
@@ -60,13 +58,6 @@ PharoDawnTheme class >> lightBaseColor [
 { #category : #accessing }
 PharoDawnTheme class >> lightSelectionColor [
 	^ Color fromHexString: '49483E'
-]
-
-{ #category : #settings }
-PharoDawnTheme class >> setPreferredPreferences [
-	"NECPreferences 
-		expandPrefixes: true;
-		popupShowWithShortcut: Character tab asShortcut."
 ]
 
 { #category : #accessing }
