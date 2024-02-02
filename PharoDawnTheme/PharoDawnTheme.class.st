@@ -19,6 +19,12 @@ PharoDawnTheme class >> baseSelectionColor [
 	^ Color fromHexString: '49483E'
 ]
 
+{ #category : #configuration }
+PharoDawnTheme class >> colorConfiguratorClass [
+
+	^ DawnThemeColorConfigurator
+]
+
 { #category : #accessing }
 PharoDawnTheme class >> darkBaseColor [
 	^ Color veryDarkGray
